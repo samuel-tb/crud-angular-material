@@ -39,6 +39,7 @@
                                        [(ngModel)]="cliente.cpf" 
                                        name="cpf" 
                                        mask="000.000.000-00" 
+                                       [dropSpecialCharacters]="false"
                                        placeholder="Digite seu CPF" matInput/>
                             </mat-form-field>
                         </div>
@@ -52,6 +53,7 @@
                                        [(ngModel)]="cliente.dataNascimento" 
                                        name="dataNascimento" 
                                        mask="00/00/0000" 
+                                       [dropSpecialCharacters]="false"
                                        placeholder="Digite sua data de nascimento" matInput />
                             </mat-form-field>
                         </div>
@@ -91,13 +93,13 @@
                             Salvar
                         </button>
                     } @else{
-                        <button mat-flat-button color="primary">
+                        <button mat-flat-button color="primary" type="submit">
                             <mat-icon fontIcon="refresh"></mat-icon>
                             Atualizar
                         </button>
                     }
                     
-                    <button mat-flat-button color="accent" class="ml-5">
+                    <button mat-flat-button color="accent" class="ml-5" type="button" (click)="limpar()">
                         <mat-icon fontIcon="backspace"></mat-icon>
                         Limpar
                     </button>                        

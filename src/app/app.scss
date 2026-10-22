@@ -1,3 +1,24 @@
 .spacer{
     flex: 1 1 auto;       
 }
+
+mat-toolbar a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+mat-toolbar a:hover {
+  text-decoration: underline;
+}
+
+mat-toolbar a:active{
+    color: #FF4785;
+}
+
+mat-toolbar a mat-icon {
+  margin-right: 4px;
+}

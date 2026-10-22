@@ -106,4 +106,8 @@ export class Cadastro implements OnInit{
     this.snack.open(mensagem, 'OK');
   }
 
+  limpar() {
+    this.cliente = Cliente.newCliente();
+  }
+
 }
